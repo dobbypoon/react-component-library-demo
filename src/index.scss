@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+.bootstrap-less {
+  label {
+    display: initial;
+    margin-bottom: initial;
+  }
+  button, input {
+    overflow: initial;
+  }
+  input, button, select, optgroup, textarea {
+    margin: initial;
+    font-size: initial;
+    line-height: initial;
+  }
+  input[type=radio], input[type=checkbox] {
+    padding: initial;
+  }
+  select {
+    word-wrap: initial;
+  }
+  button, select {
+    text-transform: initial;
+  }
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.header {
+  padding-top: 24px;
+}
+
+.comparison-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-row {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 !important;
+}
