@@ -22,7 +22,7 @@ function IonicForm() {
 
 	return (
 		<div className="comparison-item-container">
-			<div>IonicForm</div>
+			<div>Ionic</div>
 			<form noValidate onSubmit={handleSubmit}>
 				<div className="comparison-row">
 					<IonItem>
@@ -67,7 +67,7 @@ function IonicForm() {
 				<div className="comparison-row">/</div>
 				<div className="comparison-row">/</div>
 
-                <IonButton mode={mode} type="submit" className="mt-2">Submit Ionic</IonButton>
+                <IonButton mode={mode} type="submit" className="m-2">Submit Ionic</IonButton>
 			</form>
 		</div>
 	);

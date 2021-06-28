@@ -50,7 +50,7 @@ function MaterialUiForm() {
 
 	return (
 		<div className="comparison-item-container">
-			<div>MaterialUiForm</div>
+			<div>Material-UI</div>
 
 			<form noValidate onSubmit={handleSubmit}>
 				<div className="comparison-row">

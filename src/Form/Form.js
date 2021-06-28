@@ -7,7 +7,7 @@ function Form() {
     const header = (
         <div className="header">
             { comparisonItems.map((item, i) => (
-                <div key={`comparisonItem_${i}`} className="comparison-row">{item}</div>
+                <div key={`form_comparisonItem_${i}`} className="comparison-row">{item}</div>
             ))}
         </div>
     );

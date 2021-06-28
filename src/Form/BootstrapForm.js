@@ -21,7 +21,7 @@ function BootstrapForm() {
 
 	return (
 		<div className="comparison-item-container">
-			<div>BootstrapForm</div>
+			<div>Bootstrap</div>
 			<Form noValidate validated={validated} onSubmit={handleSubmit}>
 				<Form.Group controlId="bootstrapFormEmail" className="comparison-row">
 					<Form.Label>Email address</Form.Label>
