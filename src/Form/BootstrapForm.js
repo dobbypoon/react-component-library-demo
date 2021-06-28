@@ -55,7 +55,7 @@ function BootstrapForm() {
 					<Form.Control type="range" />
 				</Form.Group>
 
-				<div className="comparison-row"></div>
+				<div className="comparison-row">/</div>
 
 				<div className="comparison-row">
 					<InputGroup>
@@ -79,7 +79,7 @@ function BootstrapForm() {
 					</InputGroup>
 				</div>
 
-				<div className="comparison-row"></div>
+				<div className="comparison-row">/</div>
 
 				<Button type="submit" className="m-2">
 					Submit bootstrap

@@ -116,7 +116,7 @@ function MaterialUiForm() {
 					/>
 				</div>
 
-				<div className="comparison-row"></div>
+				<div className="comparison-row">/</div>
 
 				<div className="comparison-row">
 					<Autocomplete
