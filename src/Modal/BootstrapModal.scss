@@ -1,0 +1,21 @@
+.bootstrap-customize-dialog {
+    .modal-content {
+        background: var(--modal-background-color);
+    }
+
+    .modal-footer {
+        button.btn {
+            border-color: var(--modal-action-btn-background);
+            background-color: var(--modal-action-btn-background);
+
+            &:hover, &:active {
+                border-color: var(--modal-action-btn-background-hover);
+                background-color: var(--modal-action-btn-background-hover);
+            }
+            
+            &:focus, &.btn-primary:not(:disabled):not(.disabled):focus {
+                box-shadow: 0 0 0 0.25rem var(--modal-action-btn-focus-ring);
+            }
+        }
+    }
+}

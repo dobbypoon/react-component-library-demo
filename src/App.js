@@ -4,6 +4,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import { IonPage, IonContent } from "@ionic/react";
 
 import Form from "./Form/Form";
 import Modal from "./Modal/Modal";
@@ -37,9 +38,13 @@ function AppRouter() {
 
 function App() {
     return (
-		<div className="App">
-			<AppRouter />
-		</div>
+        <IonPage>
+            <IonContent>
+                <div className="App">
+                    <AppRouter />
+                </div>
+            </IonContent>
+        </IonPage>
 	);
 }
 

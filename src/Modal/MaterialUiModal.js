@@ -9,6 +9,8 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { makeStyles } from "@material-ui/core/styles";
 
+import "./MaterialUiModal.scss";
+
 const useStyles = makeStyles((theme) => ({
 	paper: {
 		position: "absolute",
@@ -41,20 +43,23 @@ function MyDialog(props) {
 			<DialogTitle id="material-ui-dialog-title">{"Modal heading"}</DialogTitle>
 			<DialogContent>
 				<DialogContentText id="material-ui-dialog-description">
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+					Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
 					eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                </DialogContentText>
+				</DialogContentText>
 			</DialogContent>
-            <DialogActions>
-                <Button onClick={props.onHide} color="primary">Close</Button>
-            </DialogActions>
+			<DialogActions>
+				<Button variant="contained" onClick={props.onHide} color="primary">
+					Close
+				</Button>
+			</DialogActions>
 		</Dialog>
 	);
 }
 
 function MaterialUiModal() {
 	const [lModalOpen, setlModalOpen] = useState(false);
-	const [dialogOpen, setDialogOpen] = useState(false);
+	const [ordinaryDialogOpen, setOrdinaryDialogOpen] = useState(false);
+	const [customizedDialogOpen, setCustomizedDialogOpen] = useState(false);
 
 	return (
 		<div className="comparison-item-container">
@@ -67,10 +72,21 @@ function MaterialUiModal() {
 			</div>
 
 			<div className="comparison-row">
-				<Button variant="outlined" color="primary" onClick={() => setDialogOpen(true)}>
+				<Button variant="outlined" color="primary" onClick={() => setOrdinaryDialogOpen(true)}>
 					Open Dialog
 				</Button>
-				<MyDialog open={dialogOpen} onHide={() => setDialogOpen(false)} />
+				<MyDialog open={ordinaryDialogOpen} onHide={() => setOrdinaryDialogOpen(false)} />
+			</div>
+
+			<div className="comparison-row">
+				<Button variant="outlined" color="secondary" onClick={() => setCustomizedDialogOpen(true)}>
+					Open Dialog
+				</Button>
+				<MyDialog
+					className="material-ui-customize-dialog"
+					open={customizedDialogOpen}
+					onHide={() => setCustomizedDialogOpen(false)}
+				/>
 			</div>
 		</div>
 	);

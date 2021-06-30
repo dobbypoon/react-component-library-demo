@@ -1,0 +1,31 @@
+.ionic-custom-class {
+	@media (max-width: 768px) {
+		--width: 50%;
+		--height: 50%;
+		--border-radius: 5px;
+
+        .ion-page {
+            padding: 16px;
+        }
+	}
+
+	--background: var(--modal-background-color);
+
+	ion-button {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin: 16px;
+		--background: var(--modal-action-btn-background);
+		--background-hover: var(--modal-action-btn-background-hover);
+
+		// Access to shadow dom
+		.button-native {
+			display: none !important;
+		}
+
+		// &::part(native) {
+		//     display: none !important;
+		// }
+	}
+}

@@ -1,0 +1,18 @@
+.material-ui-customize-dialog {
+	.MuiDialog-paper {
+		background-color: var(--modal-background-color);
+	}
+
+	.MuiDialogActions-root {
+		.MuiButton-root {
+			background: var(--modal-action-btn-background);
+
+			&:hover {
+				background: var(--modal-action-btn-background-hover);
+			}
+			.MuiTouchRipple-root span {
+				// background-color: white;
+			}
+		}
+	}
+}

@@ -12,7 +12,7 @@ import {
 
 function IonicForm() {
 
-    const mode = "md";
+    const mode = "ios";
 
 	const handleSubmit = (event) => {
         event.preventDefault();
@@ -67,7 +67,8 @@ function IonicForm() {
 				<div className="comparison-row">/</div>
 				<div className="comparison-row">/</div>
 
-                <IonButton mode={mode} type="submit" className="m-2">Submit Ionic</IonButton>
+				{/* type="submit" */}
+                <IonButton mode={mode} className="m-2">Submit Ionic</IonButton>
 			</form>
 		</div>
 	);

@@ -1,34 +1,26 @@
-body {
-  margin: 0;
+/* Core CSS required for Ionic components to work properly */
+@import '@ionic/react/css/core.css';
+
+/* Basic CSS for apps built with Ionic */
+@import '@ionic/react/css/normalize.css';
+@import '@ionic/react/css/structure.css';
+@import '@ionic/react/css/typography.css';
+
+* {
+  --modal-background-color: rgb(250, 246, 212);
+  --modal-action-btn-focus-ring: rgb(255, 160, 97);
+  --modal-action-btn-background: rgb(255, 102, 0);
+  --modal-action-btn-background-hover: rgb(180, 74, 3);
 }
 
-.bootstrap-less {
-  label {
-    display: initial;
-    margin-bottom: initial;
-  }
-  button, input {
-    overflow: initial;
-  }
-  input, button, select, optgroup, textarea {
-    margin: initial;
-    font-size: initial;
-    line-height: initial;
-  }
-  input[type=radio], input[type=checkbox] {
-    padding: initial;
-  }
-  select {
-    word-wrap: initial;
-  }
-  button, select {
-    text-transform: initial;
-  }
+body {
+  margin: 0;
 }
 
 .comparison-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  overflow-x: scroll;
 }
 
 .header {

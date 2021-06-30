@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Overlay from "react-bootstrap/Overlay";
 
+import "./BootstrapModal.scss";
+
 function MyLModal(props) {
 	return (
 		<Overlay {...props}>
@@ -45,9 +47,10 @@ function MyDialog(props) {
 }
 
 function BootstrapModal() {
-    const modalTarget = useRef(null);
-    const [lModalShow, setlModalShow] = useState(false);
-	const [dialogShow, setDialogShow] = useState(false);
+	const modalTarget = useRef(null);
+	const [lModalShow, setlModalShow] = useState(false);
+	const [ordinaryDialogShow, setOrdinaryDialogShow] = useState(false);
+	const [customizedDialogShow, setCustomizedDialogShow] = useState(false);
 
 	return (
 		<div className="comparison-item-container">
@@ -62,11 +65,23 @@ function BootstrapModal() {
 			</div>
 
 			<div className="comparison-row">
-				<Button variant="primary" onClick={() => setDialogShow(true)}>
-					Launch Dialog
+				<Button variant="primary" onClick={() => setOrdinaryDialogShow(true)}>
+					Launch Modal
 				</Button>
 
-				<MyDialog show={dialogShow} onHide={() => setDialogShow(false)} />
+				<MyDialog show={ordinaryDialogShow} onHide={() => setOrdinaryDialogShow(false)} />
+			</div>
+
+			<div className="comparison-row">
+				<Button variant="primary" onClick={() => setCustomizedDialogShow(true)}>
+					Launch Modal
+				</Button>
+
+				<MyDialog
+					dialogClassName="bootstrap-customize-dialog"
+					show={customizedDialogShow}
+					onHide={() => setCustomizedDialogShow(false)}
+				/>
 			</div>
 		</div>
 	);

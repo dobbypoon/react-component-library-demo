@@ -3,7 +3,7 @@ import IonicModal from "./IonicModal";
 import MaterialUiModal from "./MaterialUiModal";
 
 function Modal() {
-    const comparisonItems = ['Lower-level', 'Dialog'];
+    const comparisonItems = ['Lower-level', 'Dialog', 'Customized Dialog'];
     const header = (
         <div className="header">
             { comparisonItems.map((item, i) => (
