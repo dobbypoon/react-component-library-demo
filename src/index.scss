@@ -6,7 +6,10 @@
 @import '@ionic/react/css/structure.css';
 @import '@ionic/react/css/typography.css';
 
-* {
+/* bootstrap */
+@import "~bootstrap/scss/bootstrap";
+
+:root {
   --modal-background-color: rgb(250, 246, 212);
   --modal-action-btn-focus-ring: rgb(255, 160, 97);
   --modal-action-btn-background: rgb(255, 102, 0);
