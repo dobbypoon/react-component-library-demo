@@ -9,7 +9,7 @@ import "./BootstrapModal.scss";
 function MyLModal(props) {
 	return (
 		<Overlay {...props}>
-			{({ placement, arrowProps, show: _show, popper, ...pros }) => (
+			{({ placement, arrowProps, show: _show, popper, ...props }) => (
 				<div
 					{...props}
 					style={{
